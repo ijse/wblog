@@ -76,11 +76,11 @@ published: true
  	<li>基本问题/风险管理：重要问题要显著标注、受到关注</li>
 </ol>
 </li>
- 	<li>沟通管理工具（Slack, I@ijser.cn）
+ 	<li>沟通管理工具（Slack, Email）
 <ol>
  	<li>Slack做信息的汇总呈现</li>
  	<li>团队成员间的即时交流</li>
- 	<li>重要决定、事项通过I@ijser.cn备忘</li>
+ 	<li>重要决定、事项通过Email备忘</li>
 </ol>
 </li>
  	<li>知识管理工具（Quip）

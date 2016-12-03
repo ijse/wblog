@@ -1,0 +1,483 @@
+---
+ID: 30
+post_title: >
+  Markdown 语法和 MWeb
+  写作使用说明
+author: ijse
+post_date: 2016-09-22 02:53:01
+post_excerpt: ""
+layout: post
+permalink: >
+  https://ijser.cn/markdown-yu-fa-he-mweb-xie-zuo-shi-yong-shuo-ming/
+published: true
+---
+<h2 id="toc_0">Markdown 的设计哲学</h2>
+
+<blockquote>
+<p>Markdown 的目標是實現「易讀易寫」。
+不過最需要強調的便是它的可讀性。一份使用 Markdown 格式撰寫的文件應該可以直接以純文字發佈，並且看起來不會像是由許多標籤或是格式指令所構成。
+Markdown 的語法有個主要的目的：用來作為一種網路內容的<em>寫作</em>用語言。</p>
+</blockquote>
+
+<!--more-->
+
+<h2 id="toc_1">本文约定</h2>
+
+<p>如果有写 <code>效果如下：</code>， 在 MWeb 编辑状态下只有用 <code>CMD + 4</code> 或 <code>CMD + R</code> 预览才可以看效果。</p>
+
+<h2 id="toc_2">标题</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code># 第一级标题 `&lt;h1&gt;` 
+## 第二级标题 `&lt;h2&gt;` 
+###### 第六级标题 `&lt;h6&gt;` 
+</code></pre>
+
+<p>效果如下：</p>
+
+<h1 id="toc_3">第一级标题 <code>&lt;h1&gt;</code></h1>
+
+<h2 id="toc_4">第二级标题 <code>&lt;h2&gt;</code></h2>
+
+<h6 id="toc_5">第六级标题 <code>&lt;h6&gt;</code></h6>
+
+<h2 id="toc_6">强调</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>*这些文字会生成`&lt;em&gt;`*
+_这些文字会生成`&lt;u&gt;`_
+
+**这些文字会生成`&lt;strong&gt;`**
+__这些文字会生成`&lt;strong&gt;`__
+</code></pre>
+
+<p>在 MWeb 中的快捷键为： <code>CMD + U</code>、<code>CMD + I</code>、<code>CMD + B</code>
+效果如下：</p>
+
+<p><em>这些文字会生成<code>&lt;em&gt;</code></em>
+<u>这些文字会生成<code>&lt;u&gt;</code></u></p>
+
+<p><strong>这些文字会生成<code>&lt;strong&gt;</code></strong>
+<strong>这些文字会生成<code>&lt;strong&gt;</code></strong></p>
+
+<h2 id="toc_7">换行</h2>
+
+<p>四个及以上空格加回车。
+如果不想打这么多空格，只要回车就为换行，请勾选：<code>Preferences</code> - <code>Themes</code> - <code>Translate newlines to &lt;br&gt; tags</code></p>
+
+<h2 id="toc_8">列表</h2>
+
+<h3 id="toc_9">无序列表</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>* 项目一 无序列表 `* + 空格键`
+* 项目二
+* 项目二的子项目一 无序列表 `TAB + * + 空格键`
+* 项目二的子项目二
+</code></pre>
+
+<p>在 MWeb 中的快捷键为： <code>Option + U</code>
+效果如下：</p>
+
+<ul>
+<li>项目一 无序列表 <code>* + 空格键</code></li>
+<li>项目二</li>
+<li>项目二的子项目一 无序列表 <code>TAB + * + 空格键</code></li>
+<li>项目二的子项目二</li>
+</ul>
+
+<h3 id="toc_10">有序列表</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>1. 项目一 有序列表 `数字 + . + 空格键`
+2. 项目二 
+3. 项目三
+1. 项目三的子项目一 有序列表 `TAB + 数字 + . + 空格键`
+2. 项目三的子项目二
+</code></pre>
+
+<p>效果如下：</p>
+
+<ol>
+<li>项目一 有序列表 <code>数字 + . + 空格键</code></li>
+<li>项目二 </li>
+<li>项目三</li>
+<li>项目三的子项目一 有序列表 <code>TAB + 数字 + . + 空格键</code></li>
+<li>项目三的子项目二</li>
+</ol>
+
+<h3 id="toc_11">任务列表（Task lists）</h3>
+
+<p>Markdown 语法：</p>
+
+<pre><code>- [ ] 任务一 未做任务 `- + 空格 + [ ]`
+- [x] 任务二 已做任务 `- + 空格 + [x]`
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" /> 任务一 未做任务 <code>- + 空格 + [ ]</code>
+</li>
+<li class="task-list-item"><input disabled="disabled" type="checkbox" checked /> 任务二 已做任务 <code>- + 空格 + [x]</code>
+</li>
+</ul>
+
+<h2 id="toc_12">图片</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>![GitHub set up](http://zh.mweb.im/asset/img/set-up-git.gif)
+格式: ![Alt Text](url)
+</code></pre>
+
+<p><code>Control + Shift + I</code> 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，还可以用拖放图片、<code>CMD + V</code> 粘贴、<code>CMD + Option + I</code> 导入这三种方式来增加图片。
+效果如下：</p>
+
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up"/></p>
+
+<p>MWeb 引入的特别的语法来设置图片宽度，方法是在图片描述后加 <code>-w + 图片宽度</code> 即可，比如说要设置上面的图片的宽度为 140，语法如下：</p>
+
+<p><img src="http://zh.mweb.im/asset/img/set-up-git.gif" alt="GitHub set up" style="width:140px;"/></p>
+
+<h2 id="toc_13">链接</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>email &lt;example@example.com&gt;
+[GitHub](http://github.com)
+自动生成连接  &lt;http://www.github.com/&gt;
+</code></pre>
+
+<p><code>Control + Shift + L</code> 可插入Markdown语法。
+如果是 MWeb 的文档库中的文档，拖放或<code>CMD + Option + I</code> 导入非图片时，会生成连接。
+效果如下：</p>
+
+<p>Email 连接： <a href="mailto:example@example.com">example@example.com</a>
+<a href="http://github.com">连接标题Github网站</a>
+自动生成连接像： <a href="http://www.github.com/">http://www.github.com/</a> 这样</p>
+
+<h2 id="toc_14">区块引用</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>某某说:
+&gt; 第一行引用
+&gt; 第二行费用文字
+</code></pre>
+
+<p><code>CMD + Shift + B</code> 可插入Markdown语法。
+效果如下：</p>
+
+<p>某某说:</p>
+
+<blockquote>
+<p>第一行引用
+第二行费用文字</p>
+</blockquote>
+
+<h2 id="toc_15">行内代码</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>像这样即可：`&lt;addr&gt;` `code`
+</code></pre>
+
+<p><code>CMD + K</code> 可插入Markdown语法。
+效果如下：</p>
+
+<p>像这样即可：<code>&lt;addr&gt;</code> <code>code</code></p>
+
+<h2 id="toc_16">多行或者一段代码</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>```js
+function fancyAlert(arg) {
+    if(arg) {
+    $.facebox({div:&#39;#foo&#39;})
+    }
+
+}
+```
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;&lt;code&gt;CMD + Shift + K&lt;/code&gt; 可插入Markdown语法。
+效果如下：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-js&quot;&gt;function fancyAlert(arg) {
+    if(arg) {
+    $.facebox({div:&#039;#foo&#039;})
+    }
+
+}
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;toc_17&quot;&gt;顺序图或流程图&lt;/h2&gt;
+
+&lt;p&gt;Markdown 语法：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;```sequence
+张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+```
+
+```flow
+st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+```
+</code></pre>
+
+<p>效果如下（ <code>Preferences</code> - <code>Themes</code> - <code>Enable sequence &amp; flow chart</code> 才会看到效果 ）：</p>
+
+<pre><code class="language-sequence">张三-&gt;李四: 嘿，小四儿, 写博客了没?
+Note right of 李四: 李四愣了一下，说：
+李四--&gt;张三: 忙得吐血，哪有时间写。
+</code></pre>
+
+<pre><code class="language-flow">st=&gt;start: 开始
+e=&gt;end: 结束
+op=&gt;operation: 我的操作
+cond=&gt;condition: 确认？
+
+st-&gt;op-&gt;cond
+cond(yes)-&gt;e
+cond(no)-&gt;op
+</code></pre>
+
+<p>更多请参考：<a href="http://bramp.github.io/js-sequence-diagrams/">http://bramp.github.io/js-sequence-diagrams/</a>, <a href="http://adrai.github.io/flowchart.js/">http://adrai.github.io/flowchart.js/</a></p>
+
+<h2 id="toc_18">表格</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>第一格表头 | 第二格表头
+--------- | -------------
+内容单元格 第一列第一格 | 内容单元格第二列第一格
+内容单元格 第一列第二格 多加文字 | 内容单元格第二列第二格
+</code></pre>
+
+<p>效果如下：</p>
+
+<table>
+<thead>
+<tr>
+<th>第一格表头</th>
+<th>第二格表头</th>
+</tr>
+</thead>
+
+<tbody>
+<tr>
+<td>内容单元格 第一列第一格</td>
+<td>内容单元格第二列第一格</td>
+</tr>
+<tr>
+<td>内容单元格 第一列第二格 多加文字</td>
+<td>内容单元格第二列第二格</td>
+</tr>
+</tbody>
+</table>
+
+<h2 id="toc_19">删除线</h2>
+
+<p>Markdown 语法：</p>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<p>效果如下：</p>
+
+<p>加删除线像这样用： <del>删除这些</del></p>
+
+<h2 id="toc_20">分隔线</h2>
+
+<p>以下三种方式都可以生成分隔线：</p>
+
+<pre><code>***
+
+*****
+
+- - -
+</code></pre>
+
+<p>效果如下：</p>
+
+<hr/>
+
+<hr/>
+
+<hr/>
+
+<h2 id="toc_21">MathJax</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>块级公式：
+$$  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} $$
+
+\\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \\]
+
+行内公式： $\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N$
+</code></pre>
+
+<p>效果如下（<code>Preferences</code> - <code>Themes</code> - <code>Enable MathJax</code> 才会看到效果）：</p>
+
+<p>块级公式：
+\[  x = \dfrac{-b \pm \sqrt{b^2 - 4ac}}{2a} \]</p>
+
+<p>\[ \frac{1}{\Bigl(\sqrt{\phi \sqrt{5}}-\phi\Bigr) e^{\frac25 \pi}} =
+1+\frac{e^{-2\pi}} {1+\frac{e^{-4\pi}} {1+\frac{e^{-6\pi}}
+{1+\frac{e^{-8\pi}} {1+\ldots} } } } \]</p>
+
+<p>行内公式： \(\Gamma(n) = (n-1)!\quad\forall n\in\mathbb N\)</p>
+
+<h2 id="toc_22">脚注（Footnote）</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>这是一个脚注：[^sample_footnote]
+</code></pre>
+
+<p>效果如下：</p>
+
+<p>这是一个脚注：<sup id="fnref1"><a href="#fn1" rel="footnote">1</a></sup></p>
+
+<h2 id="toc_23">注释和阅读更多</h2>
+
+<!-- comment -->
+
+<!--more-->
+
+<p>Actions-&gt;Insert Read More Comment <em>或者</em> <code>Command + .</code>
+<strong>注</strong> 阅读更多的功能只用在生成网站或博客时，插入时注意要后空一行。</p>
+
+<h2 id="toc_24">TOC</h2>
+
+<p>Markdown 语法：</p>
+
+<pre><code>[TOC]
+</code></pre>
+
+<p>效果如下：</p>
+
+<ul>
+<li>
+<a href="#toc_0">Markdown 的设计哲学</a>
+</li>
+<li>
+<a href="#toc_1">本文约定</a>
+</li>
+<li>
+<a href="#toc_2">标题</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_3">第一级标题 <code>&lt;h1&gt;</code></a>
+<ul>
+<li>
+<a href="#toc_4">第二级标题 <code>&lt;h2&gt;</code></a>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<ul>
+<li>
+<a href="#toc_5">第六级标题 <code>&lt;h6&gt;</code></a>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_6">强调</a>
+</li>
+<li>
+<a href="#toc_7">换行</a>
+</li>
+<li>
+<a href="#toc_8">列表</a>
+<ul>
+<li>
+<a href="#toc_9">无序列表</a>
+</li>
+<li>
+<a href="#toc_10">有序列表</a>
+</li>
+<li>
+<a href="#toc_11">任务列表（Task lists）</a>
+</li>
+</ul>
+</li>
+<li>
+<a href="#toc_12">图片</a>
+</li>
+<li>
+<a href="#toc_13">链接</a>
+</li>
+<li>
+<a href="#toc_14">区块引用</a>
+</li>
+<li>
+<a href="#toc_15">行内代码</a>
+</li>
+<li>
+<a href="#toc_16">多行或者一段代码</a>
+</li>
+<li>
+<a href="#toc_17">顺序图或流程图</a>
+</li>
+<li>
+<a href="#toc_18">表格</a>
+</li>
+<li>
+<a href="#toc_19">删除线</a>
+</li>
+<li>
+<a href="#toc_20">分隔线</a>
+</li>
+<li>
+<a href="#toc_21">MathJax</a>
+</li>
+<li>
+<a href="#toc_22">脚注（Footnote）</a>
+</li>
+<li>
+<a href="#toc_23">注释和阅读更多</a>
+</li>
+<li>
+<a href="#toc_24">TOC</a>
+</li>
+</ul>
+
+
+<div class="footnotes">
+<hr/>
+<ol>
+
+<li id="fn1">
+<p>这里是脚注信息&nbsp;<a href="#fnref1" rev="footnote">&#8617;</a></p>
+</li>
+
+</ol>
+</div>

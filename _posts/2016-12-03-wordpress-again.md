@@ -5,7 +5,7 @@ author: ijse
 post_date: 2016-12-03 18:02:24
 post_excerpt: ""
 layout: post
-permalink: https://ijser.cn/hello-world/
+permalink: https://ijser.cn/wordpress-again/
 published: true
 ---
 从Ghost换回wordpress。

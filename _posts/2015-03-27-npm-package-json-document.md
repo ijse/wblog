@@ -2,7 +2,7 @@
 ID: 57
 post_title: package.json for NPM 文件详解
 author: ijse
-post_date: 2015-03-27 02:35:15
+post_date: 2015-03-27 10:35:15
 post_excerpt: ""
 layout: post
 permalink: >
@@ -46,13 +46,13 @@ published: true
 
 <h5 id="toc_5">bugs</h5>
 
-<p>包的bug跟踪主页地址，应该如下设置：
-<code>json
-bugs: {
+<p>包的bug跟踪主页地址，应该如下设置：</p>
+
+<pre><code class="language-json">bugs: {
   &quot;url&quot;: &quot;http://github.com/ijse/project/issues&quot;,
   &quot;i@ijser.cn&quot;: &quot;my@ijser.cn&quot;
 }
-</code></p>
+</code></pre>
 
 <h5 id="toc_6">license</h5>
 
@@ -60,18 +60,19 @@ bugs: {
 
 <h5 id="toc_7">author</h5>
 
-<p>包的作者，可以是字符串或对象：
-<code>json
-author: {
+<p>包的作者，可以是字符串或对象：</p>
+
+<pre><code class="language-json">author: {
   &quot;name&quot;: &quot;ijse&quot;,
   &quot;i@ijser.cn&quot;: &quot;my@ijse.cn&quot;,
   &quot;url&quot;: &quot;http://www.ijser.cn&quot;
 }
-</code>
-或者:
-<code>json
-author: &quot;ijse &lt;my@ijser.cn&gt; (http://www.ijser.cn)&quot;
-</code></p>
+</code></pre>
+
+<p>或者:</p>
+
+<pre><code class="language-json">author: &quot;ijse &lt;my@ijser.cn&gt; (http://www.ijser.cn)&quot;
+</code></pre>
 
 <h5 id="toc_8">contributors, maintainers</h5>
 
@@ -89,28 +90,31 @@ author: &quot;ijse &lt;my@ijser.cn&gt; (http://www.ijser.cn)&quot;
 
 <h5 id="toc_11">bin</h5>
 
-<p>如果你的包里包含可执行文件，通过设置这个字段可以将它们包含到系统的<code>PATH</code>中，这样直接就可以运行，很方便。如：
-<code>json
-&quot;bin&quot;: {
+<p>如果你的包里包含可执行文件，通过设置这个字段可以将它们包含到系统的<code>PATH</code>中，这样直接就可以运行，很方便。如：</p>
+
+<pre><code class="language-json">&quot;bin&quot;: {
   &quot;iapp&quot;: &quot;./cli.js&quot;
 }
-</code>
-当包被安装后，NPM将创建一个<code>cli.js</code>文件的链接到<code>/usr/local/bin/iapp</code>下。</p>
+</code></pre>
+
+<p>当包被安装后，NPM将创建一个<code>cli.js</code>文件的链接到<code>/usr/local/bin/iapp</code>下。</p>
 
 <h5 id="toc_12">man</h5>
 
-<p>为系统的<code>man</code>命令提供帮助文档, 如：
-<code>json
-&quot;man&quot;: &quot;./man/doc.1&quot;
-</code>
-帮助文件的文件名必须以<code>数字</code>结尾，如果是压缩的，需要以<code>.gz</code>结尾。</p>
+<p>为系统的<code>man</code>命令提供帮助文档, 如：</p>
 
-<p>如果是字符串数组：
-<code>json
-&quot;name&quot;: &quot;foo&quot;,
+<pre><code class="language-json">&quot;man&quot;: &quot;./man/doc.1&quot;
+</code></pre>
+
+<p>帮助文件的文件名必须以<code>数字</code>结尾，如果是压缩的，需要以<code>.gz</code>结尾。</p>
+
+<p>如果是字符串数组：</p>
+
+<pre><code class="language-json">&quot;name&quot;: &quot;foo&quot;,
 &quot;man&quot;: [&quot;./man/foo.1&quot;, &quot;./man/bar.1&quot;, &quot;./man/foo.2&quot; ]
-</code>
-则分别可以<code>man foo</code>, <code>man foo-bar</code>, <code>man 2 foo</code>来查看。</p>
+</code></pre>
+
+<p>则分别可以<code>man foo</code>, <code>man foo-bar</code>, <code>man 2 foo</code>来查看。</p>
 
 <h5 id="toc_13">directories</h5>
 
@@ -120,13 +124,13 @@ author: &quot;ijse &lt;my@ijser.cn&gt; (http://www.ijser.cn)&quot;
 
 <h5 id="toc_14">repository</h5>
 
-<p>包的仓库地址。如：
-<code>json
-&quot;repository&quot;: {
+<p>包的仓库地址。如：</p>
+
+<pre><code class="language-json">&quot;repository&quot;: {
   &quot;type&quot;: &quot;git&quot;,
   &quot;url&quot;: &quot;http://github.com/ijse/project.git&quot;
 }
-</code></p>
+</code></pre>
 
 <h5 id="toc_15">scripts</h5>
 
@@ -134,29 +138,31 @@ author: &quot;ijse &lt;my@ijser.cn&gt; (http://www.ijser.cn)&quot;
 
 <h5 id="toc_16">config</h5>
 
-<p>添加一些设置，可以供<code>scripts</code>读取用，同时这里的值也会被添加到系统的环境变量中。
-<code>json
-&quot;name&quot;: &quot;foo&quot;,
+<p>添加一些设置，可以供<code>scripts</code>读取用，同时这里的值也会被添加到系统的环境变量中。</p>
+
+<pre><code class="language-json">&quot;name&quot;: &quot;foo&quot;,
 &quot;config&quot;: {
   &quot;port&quot;: &quot;8080&quot;
 }
-</code>
-<code>npm start</code>的时候会读取到<code>npm_package_config_port</code>环境变量。</p>
+</code></pre>
 
-<p>同时也可以使用<code>npm config</code>命令来修改设置：
-<code>
-npm config set foo:port 8001
-</code></p>
+<p><code>npm start</code>的时候会读取到<code>npm_package_config_port</code>环境变量。</p>
+
+<p>同时也可以使用<code>npm config</code>命令来修改设置：</p>
+
+<pre><code>npm config set foo:port 8001
+</code></pre>
 
 <h5 id="toc_17">dependencies</h5>
 
 <p>指定依赖的其它包，这些依赖是指包发布后正常执行时所需要的，如果是开发中依赖的包，可以在<code>devDependencies</code>设置。</p>
 
-<p>通常使用下面命令来安装：
-<code>
-npm install --save otherpackage
-</code>
-形式可以有如下多种：</p>
+<p>通常使用下面命令来安装：</p>
+
+<pre><code>npm install --save otherpackage
+</code></pre>
+
+<p>形式可以有如下多种：</p>
 
 <ul>
 <li><code>version</code> 严格匹配某个版本</li>
@@ -178,9 +184,9 @@ npm install --save otherpackage
 <li><code>path/path</code> 本地包所有文件夹</li>
 </ul>
 
-<p>下面都是可以用的：
-<code>json
-{ &quot;dependencies&quot; :
+<p>下面都是可以用的：</p>
+
+<pre><code class="language-json">{ &quot;dependencies&quot; :
   { &quot;foo&quot; : &quot;1.0.0 - 2.9999.9999&quot;
   , &quot;bar&quot; : &quot;&gt;=1.0.2 &lt;2.1.2&quot;
   , &quot;baz&quot; : &quot;&gt;1.0.2 &lt;=2.3.4&quot;
@@ -195,30 +201,31 @@ npm install --save otherpackage
   , &quot;dyl&quot; : &quot;file:../dyl&quot;
   }
 }
-</code>
-Git URL可以有如下种形式：
-<code>
-git://github.com/user/project.git#commit-ish
+</code></pre>
+
+<p>Git URL可以有如下种形式：</p>
+
+<pre><code>git://github.com/user/project.git#commit-ish
 git+ssh://user@hostname:project.git#commit-ish
 git+ssh://user@hostname/project.git#commit-ish
 git+http://user@hostname/project/blah.git#commit-ish
 git+https://user@hostname/project/blah.git#commit-ish
-</code></p>
+</code></pre>
 
 <h5 id="toc_18">devDependencies</h5>
 
-<p>这些依赖只有在开发时候才需要。
-<code>
-npm install --save-dev mypack
-</code></p>
+<p>这些依赖只有在开发时候才需要。</p>
+
+<pre><code>npm install --save-dev mypack
+</code></pre>
 
 <h5 id="toc_19">peerDependencies</h5>
 
 <p>相关的依赖，如果你的包是插件，而用户在使用你的包时候，通常也会需要这些依赖（插件），那么可以将依赖列到这里。</p>
 
-<p>举个例子，如<code>karma</code>, 它的<code>package.json</code>中有设置：
-<code>json
-&quot;peerDependencies&quot;: {
+<p>举个例子，如<code>karma</code>, 它的<code>package.json</code>中有设置：</p>
+
+<pre><code class="language-json">&quot;peerDependencies&quot;: {
   &quot;karma-jasmine&quot;: &quot;~0.1.0&quot;,
   &quot;karma-requirejs&quot;: &quot;~0.2.0&quot;,
   &quot;karma-coffee-preprocessor&quot;: &quot;~0.1.0&quot;,
@@ -228,8 +235,9 @@ npm install --save-dev mypack
   &quot;karma-phantomjs-launcher&quot;: &quot;~0.1.0&quot;,
   &quot;karma-script-launcher&quot;: &quot;~0.1.0&quot;
 }
-</code>
-这些都是<code>karma</code>的相关插件，一般使用<code>karma</code>的时候都会需要。</p>
+</code></pre>
+
+<p>这些都是<code>karma</code>的相关插件，一般使用<code>karma</code>的时候都会需要。</p>
 
 <h5 id="toc_20">bundledDependencies</h5>
 
@@ -241,13 +249,13 @@ npm install --save-dev mypack
 
 <h5 id="toc_22">engines</h5>
 
-<p>指定包运行的环境
-<code>json
-&quot;engines&quot;: {
+<p>指定包运行的环境</p>
+
+<pre><code class="language-json">&quot;engines&quot;: {
   &quot;node&quot;: &quot;&gt;=0.10.3 &lt; 0.12&quot;,
   &quot;npm&quot;: &quot;~1.0.20&quot;
 }
-</code></p>
+</code></pre>
 
 <h5 id="toc_23">engineStrict</h5>
 
@@ -255,19 +263,21 @@ npm install --save-dev mypack
 
 <h5 id="toc_24">os</h5>
 
-<p>指定你的包可以在哪些系统平台下运行。
-<code>json
-&quot;os&quot;: [ &quot;darwin&quot;, &quot;linux&quot;, &quot;!win32&quot; ]
-</code>
-即可以在<code>darwin</code>和<code>linux</code>平台下运行，而不能在<code>win32</code>下。这里设定的取值是来自<code>process.platform</code>的。</p>
+<p>指定你的包可以在哪些系统平台下运行。</p>
+
+<pre><code class="language-json">&quot;os&quot;: [ &quot;darwin&quot;, &quot;linux&quot;, &quot;!win32&quot; ]
+</code></pre>
+
+<p>即可以在<code>darwin</code>和<code>linux</code>平台下运行，而不能在<code>win32</code>下。这里设定的取值是来自<code>process.platform</code>的。</p>
 
 <h5 id="toc_25">cpu</h5>
 
-<p>可以指定包运行的cpu架构，如
-<code>json
-&quot;cpu&quot;: [ &quot;x64&quot;, &quot;!arm&quot; ]
-</code>
-取值来自<code>process.arch</code>。</p>
+<p>可以指定包运行的cpu架构，如</p>
+
+<pre><code class="language-json">&quot;cpu&quot;: [ &quot;x64&quot;, &quot;!arm&quot; ]
+</code></pre>
+
+<p>取值来自<code>process.arch</code>。</p>
 
 <h5 id="toc_26">preferGlobal</h5>
 
@@ -286,15 +296,10 @@ npm install --save-dev mypack
 <h3 id="toc_29">NPM的一些默认值说明</h3>
 
 <ul>
-<li><p><code>&quot;scripts&quot;: { &quot;start&quot;: &quot;node server.js&quot; }</code>
+<li><p><code>&quot;scripts&quot;: { &quot;start&quot;: &quot;node server.js&quot; }</code><br/>
 如果在项目根目录下含有<code>server.js</code>文件，则NPM会自动设置此值。</p></li>
-<li><p><code>&quot;scripts&quot;: { &quot;preinstall&quot;: &quot;node-gyp rebuild&quot; }</code></p></li>
+<li><p><code>&quot;scripts&quot;: { &quot;preinstall&quot;: &quot;node-gyp rebuild&quot; }</code><br/>
+如果在项目根目录下含有<code>binding.gyp</code>文件，则NPM会自动设置此值。</p></li>
+<li><p><code>&quot;contributors&quot;: [...]</code><br/>
+如果项目根目录下含有<code>AUTHORS</code>文件，则NPM会自动将每一行以<code>Name &lt;i@ijser.cn&gt; (url)</code>的格式读取并设定此字段。</p></li>
 </ul>
-
-<p>如果在项目根目录下含有<code>binding.gyp</code>文件，则NPM会自动设置此值。</p>
-
-<ul>
-<li><code>&quot;contributors&quot;: [...]</code></li>
-</ul>
-
-<p>如果项目根目录下含有<code>AUTHORS</code>文件，则NPM会自动将每一行以<code>Name &lt;i@ijser.cn&gt; (url)</code>的格式读取并设定此字段。</p>

@@ -4,11 +4,10 @@ post_title: >
   Docker 笔记 打造node.js开发环境
   安装nvm
 author: ijse
-post_date: 2015-03-31 04:42:33
+post_date: 2015-03-31 12:42:33
 post_excerpt: ""
 layout: post
-permalink: >
-  https://ijser.cn/docker-bi-ji-da-zaonodejs-kai-fa-huan-jing-an-zhua/
+permalink: https://ijser.cn/install-nvm-on-docker/
 published: true
 ---
 <p>通过制作一个Docker镜像，统一管理开发环境，使不同开发者可以在任何平台下开发，同时拥有相同的开发环境配置。</p>

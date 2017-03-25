@@ -130,7 +130,7 @@ b) 使用密码加密一段握手消息，发送给浏览器。</p></li>
 <h3 id="toc_8">获取证书</h3>
 
 <ul>
-<li><p>免费渠道<a href="https://www.startssl.com/">startssl</a>和<a href="https://www.wosign.com/">wosign</a><br/>
+<li>免费渠道<a href="https://www.startssl.com/">startssl</a>和<a href="https://www.wosign.com/">wosign</a><br/>
 不需要多域名支持，个人使用，一般免费的就够用了，通用性不错，一般浏览器都支持。ijser.cn使用的就是wosign的免费证书。</p></li>
 <li><p>收费渠道<br/>
 收费的就很多了，如godaddy什么的。 </p></li>
@@ -227,5 +227,5 @@ server {
 <li><p><a href="http://www.guokr.com/post/114121/">http://www.guokr.com/post/114121/</a></p></li>
 <li><p><a href="https://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers">http://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers</a></p></li>
 <li><p><a href="https://info.ssl.com/pros-and-cons-of-ssl-https-tls/">https://info.ssl.com/pros-and-cons-of-ssl-https-tls/</a></p></li>
-<li><p><a href="http://www.sslzhengshu.com/news/34-cn.html">http://www.sslzhengshu.com/news/34-cn.html</a></p></li>
+<li><p><a href="https://www.sslzhengshu.com/news/34-cn.html">http://www.sslzhengshu.com/news/34-cn.html</a></p></li>
 </ul>

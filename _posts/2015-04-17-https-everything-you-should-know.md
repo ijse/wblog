@@ -117,7 +117,7 @@ https证书颁发是需要一些费用的，一般一年几十美元至上百美
 <ol>
 <li>浏览器将自己支持的一套加密规则发送给网站。</p></li>
 <li>网站从中选出一组加密算法与HASH算法，并将自己的身份信息以证书的形式发回给浏览器。证书里面包含了网站地址，加密公钥，以及证书的颁发机构等信息。</p></li>
-<li><p>获得网站证书之后浏览器要做以下工作：
+<li>获得网站证书之后浏览器要做以下工作：
 a) 验证证书的合法性（颁发证书的机构是否合法，证书中包含的网站地址是否与正在访问的地址一致等），如果证书受信任，则浏览器栏里面会显示一个小锁头，否则会给出证书不受信的提示。
 b) 如果证书受信任，或者是用户接受了不受信的证书，浏览器会生成一串随机数的密码，并用证书中提供的公钥加密。
 c) 使用约定好的HASH计算握手消息，并使用生成的随机数对消息进行加密，最后将之前生成的所有信息发送给网站。</p></li>
@@ -220,7 +220,7 @@ server {
 <h3 id="toc_15">参考网站</h3>
 
 <ul>
-<li><p><a href="http://zh.wikipedia.org/zh/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE">http://en.wikipedia.org/wiki/HTTPS</a></p></li>
+<li><p><a href="https://zh.wikipedia.org/zh/%E8%B6%85%E6%96%87%E6%9C%AC%E4%BC%A0%E8%BE%93%E5%AE%89%E5%85%A8%E5%8D%8F%E8%AE%AE">http://en.wikipedia.org/wiki/HTTPS</a></p></li>
 <li><p><a href="http://en.wikipedia.org/wiki/Transport_Layer_Security">http://en.wikipedia.org/wiki/Transport_Layer_Security</a></p></li>
 <li><p><a href="http://hengstart.iteye.com/blog/840561">http://hengstart.iteye.com/blog/840561</a></p></li>
 <li><p><a href="http://blog.csdn.net/luocn99/article/details/39777707">http://blog.csdn.net/luocn99/article/details/39777707</a></p></li>

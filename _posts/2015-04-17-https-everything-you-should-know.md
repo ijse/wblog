@@ -124,7 +124,7 @@ c) 使用约定好的HASH计算握手消息，并使用生成的随机数对消�
 <li>网站接收浏览器发来的数据之后要做以下的操作：
 a) 使用自己的私钥将信息解密取出密码，使用密码解密浏览器发来的握手消息，并验证HASH是否与浏览器发来的一致。
 b) 使用密码加密一段握手消息，发送给浏览器。</p></li>
-<li><p>浏览器解密并计算握手消息的HASH，如果与服务端发来的HASH一致，此时握手过程结束，之后所有的通信数据将由之前浏览器生成的随机密码并利用对称加密算法进行加密。</p></li>
+<li>浏览器解密并计算握手消息的HASH，如果与服务端发来的HASH一致，此时握手过程结束，之后所有的通信数据将由之前浏览器生成的随机密码并利用对称加密算法进行加密。</p></li>
 </ol>
 
 <h3 id="toc_8">获取证书</h3>
@@ -225,7 +225,7 @@ server {
 <li><p><a href="http://hengstart.iteye.com/blog/840561">http://hengstart.iteye.com/blog/840561</a></p></li>
 <li><p><a href="http://blog.csdn.net/luocn99/article/details/39777707">http://blog.csdn.net/luocn99/article/details/39777707</a></p></li>
 <li><p><a href="http://www.guokr.com/post/114121/">http://www.guokr.com/post/114121/</a></p></li>
-<li><p><a href="http://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers">http://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers</a></p></li>
+<li><p><a href="https://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers">http://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers</a></p></li>
 <li><p><a href="https://info.ssl.com/pros-and-cons-of-ssl-https-tls/">https://info.ssl.com/pros-and-cons-of-ssl-https-tls/</a></p></li>
 <li><p><a href="http://www.sslzhengshu.com/news/34-cn.html">http://www.sslzhengshu.com/news/34-cn.html</a></p></li>
 </ul>

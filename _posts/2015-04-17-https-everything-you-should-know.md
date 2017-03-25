@@ -9,33 +9,33 @@ permalink: >
   https://ijser.cn/https-everything-you-should-know/
 published: true
 ---
-<p>HTTPS(Hypertext Transfer Protocol Secure)，即超文本传输安全协议，是HTTP与<a href="http://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8">SSL/TLS</a>的组合，用以提供加密通讯及对网络服务器身份的鉴定。</p>
+HTTPS(Hypertext Transfer Protocol Secure)，即超文本传输安全协议，是HTTP与<a href="https://zh.wikipedia.org/wiki/%E4%BC%A0%E8%BE%93%E5%B1%82%E5%AE%89%E5%85%A8">SSL/TLS</a>的组合，用以提供加密通讯及对网络服务器身份的鉴定。
 
-<p>由于http是明文传输的，所以在互联风上传输隐私信息非常不安全，目前国外大多数网站都已经全面支持https, 但国内情况很差，不仅很少有大型网站全站支持https，甚至有些网站使用https不规范，安全协议过时，留下了一些安全隐患。</p>
+由于http是明文传输的，所以在互联风上传输隐私信息非常不安全，目前国外大多数网站都已经全面支持https, 但国内情况很差，不仅很少有大型网站全站支持https，甚至有些网站使用https不规范，安全协议过时，留下了一些安全隐患。
 
 <h3 id="toc_0">https的原理介绍</h3>
 
-<p>https在不安全的网络上创建了一个安全信道，通过使用加密套件和服务器证书可被验证且可被信任，从而防止信息被截获或中间人攻击，实现保证TCP协议之上的传输层安全。</p>
+https在不安全的网络上创建了一个安全信道，通过使用加密套件和服务器证书可被验证且可被信任，从而防止信息被截获或中间人攻击，实现保证TCP协议之上的传输层安全。
 
-<p>目前浏览器中都会内置一些根证书（常见的如Microsoft、VeriSign等），基于这些根证书以及这些根证书下签署的证书是可被信任的，通常证书是由这些根证书颁发机构来颁发。</p>
+目前浏览器中都会内置一些根证书（常见的如Microsoft、VeriSign等），基于这些根证书以及这些根证书下签署的证书是可被信任的，通常证书是由这些根证书颁发机构来颁发。
 
-<p>用户访问https协议的网址时，客户端浏览器与服务器握手时，会验证服务器的证书有效性，即是否由一个被信任的证书颁发机构签发；如果不是，浏览器会对用户进行警告。然后浏览器会根据握手时约定好的加密信息加密和解密与服务器之间传输的数据，从而保障数据在传输层的安全。</p>
+用户访问https协议的网址时，客户端浏览器与服务器握手时，会验证服务器的证书有效性，即是否由一个被信任的证书颁发机构签发；如果不是，浏览器会对用户进行警告。然后浏览器会根据握手时约定好的加密信息加密和解密与服务器之间传输的数据，从而保障数据在传输层的安全。
 
-<p>详细的握手过程下面介绍。</p>
+详细的握手过程下面介绍。
 
 <h3 id="toc_1">https加密协议版本</h3>
 
-<p>主要有TLS和SSL两种协议。</p>
+主要有TLS和SSL两种协议。
 
 <h5 id="toc_2">TLS/SSL介绍</h5>
 
-<p>SSL(Secure Sockets Layer)由网景(Netscape)公司设计，用于对http协议传输的数据进行加密，由此诞生了https. SSL最新的版本是3.0, 之后IETF对SSL 3.0进行了升级，设计了TLS(Transport Layer Security) 1.0, 目前最新版本是1.2, 但还未被广泛支持。</p>
+SSL(Secure Sockets Layer)由网景(Netscape)公司设计，用于对http协议传输的数据进行加密，由此诞生了https. SSL最新的版本是3.0, 之后IETF对SSL 3.0进行了升级，设计了TLS(Transport Layer Security) 1.0, 目前最新版本是1.2, 但还未被广泛支持。
 
-<p>有关SSL/TLS协议的运行机制，可以看阮老师的文章：<a href="http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html">SSL/TLS协议运行机制的概述</a></p>
+有关SSL/TLS协议的运行机制，可以看阮老师的文章：<a href="http://www.ruanyifeng.com/blog/2014/02/ssl_tls.html">SSL/TLS协议运行机制的概述</a>
 
 <h5 id="toc_3">加密方式</h5>
 
-<p>https协议使用了三种加密方式：对称加密、非对称加密和HASH算法：</p>
+https协议使用了三种加密方式：对称加密、非对称加密和HASH算法：
 
 <ul>
 <li>非对称加密算法：RSA，DSA/DSS<br/>
@@ -46,33 +46,43 @@ published: true
 用于验证数据的完整性、有无被篡改</li>
 </ul>
 
-<p>非对称加密算法时生成公钥只能用于加密数据，是公开的；而网站的私钥用于服务器端对数据进行解密，所以需要特别保管，不能泄漏。</p>
+非对称加密算法时生成公钥只能用于加密数据，是公开的；而网站的私钥用于服务器端对数据进行解密，所以需要特别保管，不能泄漏。
 
 <h3 id="toc_4">终端的支持情况</h3>
 
-<p>据统计，目前大部分网站使用的<code>TLS 1.0</code>协议，其次是<code>TLS 1.1</code> 和<code>TLS 1.2</code>，SSL协议已经支持的很少了，而且被认为是不安全和低效率的。（数据来自Wikipedia）</p>
+据统计，目前大部分网站使用的<code>TLS 1.0</code>协议，其次是<code>TLS 1.1</code> 和<code>TLS 1.2</code>，SSL协议已经支持的很少了，而且被认为是不安全和低效率的。（数据来自Wikipedia）
 
-<p>目前决大部分浏览器都已经对https支持很好了，国外Google、Twitter、Facebook都已经全站支持了，因此可以放心使用。除一些旧的浏览器如IE6等，如使用最广泛的<code>TLS 1.0</code>协议</p>
+目前决大部分浏览器都已经对https支持很好了，国外Google、Twitter、Facebook都已经全站支持了，因此可以放心使用。除一些旧的浏览器如IE6等，如使用最广泛的<code>TLS 1.0</code>协议
 
 <ul>
-<li><p>在IE6及以下版本中是默认Disabled或根本不支持的；</p></li>
-<li><p>在Opera 4以下版本不支持</p></li>
+<li>在IE6及以下版本中是默认Disabled或根本不支持的；</p></li>
+<li>在Opera 4以下版本不支持</p></li>
 </ul>
 
-<p>除此之外，最新版本的浏览器支持情况还是不错的。</p>
+<p>除此之外，最新版本的浏览器支持情况还是不错的。
 
 <h3 id="toc_5">https解决的安全问题</h3>
 
 <ul>
-<li><p>保护隐私数据，由于数据传输是加密的，因此黑客很难截获和破解信息；因此很多网站至少登陆页面使用的是https。</p></li>
-<li><p>保障数据完整性，确保数据在传输过程中不会被修改，跟邮件的签名是一样的，比如可以防止运营商劫持、篡改网页内容。</p></li>
-<li><p>防止钓鱼网站，可以通过在浏览器上查看证书确定所访问的网站是否是钓鱼网站</p></li>
+<li>保护隐私数据，由于数据传输是加密的，因此黑客很难截获和破解信息；因此很多网站至少登陆页面使用的是https。
+
+</li>
+<li>
+
+保障数据完整性，确保数据在传输过程中不会被修改，跟邮件的签名是一样的，比如可以防止运营商劫持、篡改网页内容。
+
+</li>
+<li>
+
+防止钓鱼网站，可以通过在浏览器上查看证书确定所访问的网站是否是钓鱼网站
+
+</li>
 </ul>
 
 <h3 id="toc_6">https的缺点</h3>
 
 <ul>
-<li><p>费用问题<br/>
+<li>费用问题<br/>
 https证书颁发是需要一些费用的，一般一年几十美元至上百美元，单域名证书便宜一些，而泛域名证书会很贵。不过也有一些免费证书。</p></li>
 <li><p>响应问题<br/>
 由于增加了握手时的密钥生成和检查过程，因此建立连接时间相比http协议会更长一些，约200ms, 不过有优化的空间，（见下文）</p></li>
@@ -110,7 +120,7 @@ b) 使用密码加密一段握手消息，发送给浏览器。</p></li>
 如果是app自用，可以选择自建CA，自己给自己签署证书。好处是方便，不必花钱；坏处是需要自己维护CA，保障安全。</p></li>
 </ul>
 
-<p>证书通常有三种, 购买的时候可根据需要选择：</p>
+<p>证书通常有三种, 购买的时候可根据需要选择：
 
 <ol>
 <li>单域名证书，只签署一个域名，通常会包括如(ijser.cn, <a href="http://www.ijser.cn">www.ijser.cn</a>)</li>
@@ -133,17 +143,17 @@ b) 使用密码加密一段握手消息，发送给浏览器。</p></li>
 }
 </code></pre>
 
-<p>以上是最基本的配置，但还可以再优化些， 在server段中添加:
+以上是最基本的配置，但还可以再优化些， 在server段中添加:
 <code>
 keepalive_timeout 70;
 ssl_session_cache shared:SSL:10m;
 ssl_session_timeout 10m;
 </code>
-以上配置是对https进行优化，让https链接保持，并且设置各进程间的session缓存。</p>
+以上配置是对https进行优化，让https链接保持，并且设置各进程间的session缓存。
 
 <h4 id="toc_10">强制使用https</h4>
 
-<p>我的做法是将http请求全部301重定向到相应的https url上。https使用的是443端口，而http用的是80端口。下面是主要nginx配置：
+我的做法是将http请求全部301重定向到相应的https url上。https使用的是443端口，而http用的是80端口。下面是主要nginx配置：
 <code>
 server {
   listen 80;
@@ -151,21 +161,21 @@ server {
   return 301 https://www.ijser.cn$request_uri;
 }
 </code>
-以上配置会将所有来自ijser.cn, <a href="http://www.ijser.cn">www.ijser.cn</a> 的http请求重定向到 <a href="https://www.ijser.cn">https://www.ijser.cn</a> 。</p>
+以上配置会将所有来自ijser.cn, <a href="http://www.ijser.cn">www.ijser.cn</a> 的http请求重定向到 <a href="https://www.ijser.cn">https://www.ijser.cn</a> 。
 
 <h4 id="toc_11">Mixed Content问题</h4>
 
-<p>当浏览器地址栏上的https认证图标是黄色三角号警告时，表示当前https页面中含有http协议的资源（未加密内容），如&#39;css,js,image&#39;等外链资源。潜在的安全隐患是：</p>
+当浏览器地址栏上的https认证图标是黄色三角号警告时，表示当前https页面中含有http协议的资源（未加密内容），如&#39;css,js,image&#39;等外链资源。潜在的安全隐患是：
 
 <ol>
 <li>这些内容可能会被中间人篡改</li>
 <li>通过http请求发送的cookies可能会被截获</li>
 </ol>
 
-<p>解决的办法也是有的，如Github允许用户在发布的Markdown内容中插入站外图片，如果站外图片的url地址是http的，直接在页面上显示是会导致黄色警告的，Github的解决方案是通过服务器抓取这些图片到自己的服务器上，然后用https访问它们。</p>
+解决的办法也是有的，如Github允许用户在发布的Markdown内容中插入站外图片，如果站外图片的url地址是http的，直接在页面上显示是会导致黄色警告的，Github的解决方案是通过服务器抓取这些图片到自己的服务器上，然后用https访问它们。
 
 <blockquote>
-<p>至于图片木马问题，可以通过在http response中添加header <code>X-Content-Type-Options: nosniff</code>解决。</p>
+至于图片木马问题，可以通过在http response中添加header <code>X-Content-Type-Options: nosniff</code>解决。
 </blockquote>
 
 <h3 id="toc_12">https的一些最佳实践</h3>
@@ -179,15 +189,15 @@ server {
 
 <h3 id="toc_13">https了就确定安全吗？No.</h3>
 
-<p>因为https是基于默认信任根证书的，所以如果CA被黑掉，则其下签发的证书都有安全问题，如最近的CNNIC证书问题。</p>
+因为https是基于默认信任根证书的，所以如果CA被黑掉，则其下签发的证书都有安全问题，如最近的CNNIC证书问题。
 
-<p>另外，SSL/TLS加密算法的实现也可能有Bug，如去年的心脏出血。</p>
+另外，SSL/TLS加密算法的实现也可能有Bug，如去年的心脏出血。
 
-<p>最后，https只是保证了传输过程中不被中间人攻击和服务端是否伪造，其它安全问题仍是无法保证的，如XSS、XSRF、DDos等等。</p>
+最后，https只是保证了传输过程中不被中间人攻击和服务端是否伪造，其它安全问题仍是无法保证的，如XSS、XSRF、DDos等等。
 
 <h3 id="toc_14">结尾</h3>
 
-<p>可能我们开发网站的大多数都是无证程序员，但最好还是让我们的网站有证上岗，至少可以保障部分安全，于我们的服务器、于我们的用户信息。</p>
+可能我们开发网站的大多数都是无证程序员，但最好还是让我们的网站有证上岗，至少可以保障部分安全，于我们的服务器、于我们的用户信息。
 
 <h3 id="toc_15">参考网站</h3>
 

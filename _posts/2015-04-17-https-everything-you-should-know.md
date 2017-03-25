@@ -152,7 +152,5 @@ return 301 https://www.ijser.cn$request_uri;
  	<li><a href="http://hengstart.iteye.com/blog/840561">http://hengstart.iteye.com/blog/840561</a></li>
  	<li><a href="http://blog.csdn.net/luocn99/article/details/39777707">http://blog.csdn.net/luocn99/article/details/39777707</a></li>
  	<li><a href="http://www.guokr.com/post/114121/">http://www.guokr.com/post/114121/</a></li>
- 	<li><a href="https://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers">http://en.wikipedia.org/wiki/Template:TLS/SSL_support_history_of_web_browsers</a></li>
  	<li><a href="https://info.ssl.com/pros-and-cons-of-ssl-https-tls/">https://info.ssl.com/pros-and-cons-of-ssl-https-tls/</a></li>
- 	<li><a href="https://www.sslzhengshu.com/news/34-cn.html">http://www.sslzhengshu.com/news/34-cn.html</a></li>
 </ul>

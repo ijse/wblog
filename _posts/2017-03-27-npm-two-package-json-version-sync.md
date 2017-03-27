@@ -28,4 +28,4 @@ published: true
     "version": "pushd app; npm version $npm_package_version; git add -A; popd"
 }
 </pre>
-参考文档：https://docs.npmjs.com/cli/version
+参考文档：[https://docs.npmjs.com/cli/version](https://docs.npmjs.com/cli/version)

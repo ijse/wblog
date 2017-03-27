@@ -66,16 +66,18 @@ $ docker images
 构建成功后，会看到出现了一个<em>ijse/nvm</em>的镜像。
 
 注意，build 的时候到如下一步时：
-```
+
+<pre><code>
 =&gt; Close and reopen your terminal to start using nvm
-<pre><code>不要动，这时候正在下载安装Node.js，可能会花费比较长时间，如果等得不耐烦，可以另开一个终端，用`docker ps`查到容器Id, 然后`docker attach &lt;容器Id&gt;`来查看进度。
+不要动，这时候正在下载安装Node.js，可能会花费比较长时间，如果等得不耐烦，可以另开一个终端，用`docker ps`查到容器Id, 然后`docker attach &lt;容器Id&gt;`来查看进度。
 
 #### 试着跑一下~
 镜像构建成功后，就应该出现在`docker images`列表中了，用如下命令试着运行一下容器内的终端：
-</code></pre>
+
 $ docker run -it --name test-nvm ijse/nvm
-``<code>
-接着便进入了node的交互命令行下，可以执行</code>process.version`查看容器中node.js的版本。
+</code></pre>
+
+接着便进入了node的交互命令行下，可以执行<code>process.version</code>查看容器中node.js的版本。
 <h4 id="toc_2">把代码装载</h4>
 由于代码会经常更新，将它们打包进镜像中不太合适，一般通过目录挂载的方式，将代码目录放在宿主机上，这样可以分开管理。
 

@@ -11,7 +11,9 @@ permalink: >
   https://ijser.cn/npm-two-package-json-version-sync/
 published: true
 ---
-最近在重构一个Electron项目，使用了 [two package.json structure](https://github.com/electron-userland/electron-builder/wiki/Two-package.json-Structure)，但在更新版本号时遇到了点麻烦。
+最近在重构一个Electron项目，使用了 [two package.json structure](https://github.com/electron-userland/electron-builder/wiki/Two-package.json-Structure)，但怎样方便地同步更新两个<code>version</code>
+
+<!--more-->
 
 项目结构类似如下：
 <pre class="lang:default highlight:0 decode:true" title="two package.json structure">- project/

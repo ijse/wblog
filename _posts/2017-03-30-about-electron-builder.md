@@ -5,7 +5,7 @@ author: ijse
 post_date: 2017-03-30 17:36:08
 post_excerpt: ""
 layout: post
-permalink: 'https://ijser.cn/electron-app-%e6%89%93%e5%8c%85/'
+permalink: https://ijser.cn/about-electron-builder/
 published: true
 ---
 有关Electron 打包，网上有很多文章，但一些已经过时，并不适用于最新的版本，在研究的时候因此而走了一些弯路。

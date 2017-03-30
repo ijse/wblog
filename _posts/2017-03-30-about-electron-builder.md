@@ -1,6 +1,6 @@
 ---
 ID: 151
-post_title: Electron App 打包
+post_title: Electron App 打包相关记录
 author: ijse
 post_date: 2017-03-30 17:36:08
 post_excerpt: ""

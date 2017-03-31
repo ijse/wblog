@@ -1,6 +1,6 @@
 ---
 ID: 151
-post_title: Electron App 打包相关记录
+post_title: Electron builder 打包相关记录
 author: ijse
 post_date: 2017-03-30 17:36:08
 post_excerpt: ""
@@ -110,5 +110,9 @@ module.exports = function () {
   }
 }
 </pre>
+<h3>调试打包过程</h3>
+electron-builder遵循惯用的调试日志方式：
+<pre class="lang:default decode:true ">NODE_ENV=electron-builder build</pre>
+这样执行打包过程后，会输出详细的过程日志，对调试很有帮助。
 <h3>最后</h3>
 electron-builder 因为文档有点不太完美，实际学习起来会有点吃力，遇到文档不能很好解决的问题，可以去查Issues 和 代码，另外，关注Releases最新版本和发版说明。

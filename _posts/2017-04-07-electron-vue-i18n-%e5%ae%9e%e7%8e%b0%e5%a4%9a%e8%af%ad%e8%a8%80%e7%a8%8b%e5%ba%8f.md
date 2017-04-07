@@ -16,6 +16,8 @@ published: true
  	<li>动态加载多语言文件</li>
 </ul>
 <h3>实现</h3>
+<!--more-->
+
 i18next (http://i18next.com/)
 
 在main Process中：

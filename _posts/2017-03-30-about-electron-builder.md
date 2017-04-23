@@ -1,6 +1,6 @@
 ---
 ID: 151
-post_title: Electron builder 打包的一些心得
+post_title: Electron builder 打包和自动更新
 author: ijse
 post_date: 2017-03-30 17:36:08
 post_excerpt: ""

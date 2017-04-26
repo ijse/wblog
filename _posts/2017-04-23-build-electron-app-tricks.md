@@ -87,11 +87,11 @@ Mousetrap.bind('d e b u g enter', () =&gt; {
 
 推荐两个插件：
 <ul>
- 	<li>[electron-input-menu](https://github.com/parro-it/electron-input-menu)</li>
- 	<li>[electron-contextmenu-middleware](https://github.com/parro-it/electron-contextmenu-middleware)</li>
+ 	<li><a href="https://github.com/parro-it/electron-input-menu">electron-input-menu</a></li>
+ 	<li><a href="https://github.com/parro-it/electron-contextmenu-middleware">electron-contextmenu-middleware</a></li>
 </ul>
 用法也很简单，在renderer中执行：
-<pre class="lang:js decode:true ">// support copy, paste, cut and etc.
+<pre class="lang:js decode:true">// support copy, paste, cut and etc.
 // with shortcut and context menu
 const inputMenu = require('electron-input-menu')
 const context = require('electron-contextmenu-middleware')

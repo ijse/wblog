@@ -5,7 +5,7 @@ author: ijse
 post_date: 2017-04-27 18:33:47
 post_excerpt: ""
 layout: post
-permalink: https://ijser.cn/rxjs-rollup/
+permalink: https://ijser.cn/rxjs-startup/
 published: true
 ---
 最近项目由于业务复杂度的不断提升，前端页面的数据层管理有些混乱和低效，出现数据更新同步复杂，数据源众多等问题。
@@ -81,7 +81,7 @@ V5是最新的版本，二者在思想方面是一致的，V5版本主要优点�
 （from: https://github.com/xufei/blog/issues/44)</blockquote>
 上面只是举例，实际RxJS提供了非常多的方法。
 
-这里有一个非常棒的在线工具，将每个方法用marbles图画演示出来：
+这里有一个非常棒的在线工具，将每个方法(operator)用marbles图画演示出来：
 <p id="fjcWFRQ"><img class="alignnone size-full wp-image-200 " src="https://ijser.cn/wp-content/uploads/2017/04/img_5901e60e51254.png" alt="" /></p>
 http://rxmarbles.com/
 <h2>调试</h2>

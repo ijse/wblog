@@ -10,6 +10,9 @@ permalink: >
 published: true
 ---
 <blockquote>六个要素 和 五个误区</blockquote>
+这篇文章总结了团队技术选型中的考虑方向和标准，以及介绍了一个常见的误区。
+
+<!--more-->
 <h3>SPLSCM六个要素：</h3>
 <ul>
  	<li>战略性 Strategic

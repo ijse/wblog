@@ -49,7 +49,6 @@ V5是最新的版本，二者在思想方面是一致的，V5版本主要优点�
 
 所以，现在更倾向使用V5版本。
 <blockquote>使用npm安装RxJS 5: <code>npm install rxjs</code></blockquote>
-&nbsp;
 <h2>梳理</h2>
 <blockquote>RxJS提供了各种API来创建数据流：
 <ul>
@@ -81,6 +80,10 @@ V5是最新的版本，二者在思想方面是一致的，V5版本主要优点�
 </ul>
 （from: https://github.com/xufei/blog/issues/44)</blockquote>
 上面只是举例，实际RxJS提供了非常多的方法。
+
+这里有一个非常棒的在线工具，将每个方法用marbles图画演示出来：
+<p id="fjcWFRQ"><img class="alignnone size-full wp-image-200 " src="https://ijser.cn/wp-content/uploads/2017/04/img_5901e60e51254.png" alt="" /></p>
+http://rxmarbles.com/
 <h2>调试</h2>
 在Devtools中调试异步代码通常都比较痛苦，目前可能最有效的方法仍是<code>console.log:</code>
 

@@ -1,6 +1,6 @@
 ---
 ID: 177
-post_title: 设计称手的Electron程序技巧
+post_title: 设计称手的 Electron 程序技巧
 author: ijse
 post_date: 2017-04-23 11:42:18
 post_excerpt: ""
@@ -12,6 +12,8 @@ published: true
 Electron 客户端程序在开发时不同于一般网页开发，程序的生命周期也是不一样的，一般需要经历开发、测试、打包构建、分发程序、收集反馈等。
 
 这里介绍一些技巧， 可以方便在开发、测试及发布后更好地调试。
+
+<!--more-->
 <h2>保持依赖更新</h2>
 至少保持electron-builder更新，它会修复很多问题，诸如自动更新、软件包安装、以及平台运行等一些问题。
 <h2>阻止ErrorDialog显示</h2>

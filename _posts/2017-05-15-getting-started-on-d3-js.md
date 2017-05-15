@@ -57,7 +57,7 @@ D3的核心库主要做了以下封装：
 
 &nbsp;
 <h1>小试身手</h1>
-<a class="jsbin-embed" href="https://jsbin.com/baxacev/1/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.0.2"></script>
+[codepen_embed height="265" theme_id="0" slug_hash="ZKReQP" default_tab="js,result" user="ijse"]See the Pen &lt;a href='https://codepen.io/ijse/pen/ZKReQP/'&gt;D3&lt;/a&gt; by Li Yi (&lt;a href='http://codepen.io/ijse'&gt;@ijse&lt;/a&gt;) on &lt;a href='http://codepen.io'&gt;CodePen&lt;/a&gt;.[/codepen_embed]
 <h1>参考：</h1>
 <ul>
  	<li>https://github.com/d3/d3/wiki/Tutorials</li>

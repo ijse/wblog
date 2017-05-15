@@ -54,6 +54,10 @@ D3的核心库主要做了以下封装：
 但如果要做出优秀的数据可视化图表，还需要对各种图表特点和适用性，动画美学，源数据特点，以及物理公式等有一些了解。
 <h1>学习工具</h1>
 推荐用jsbin，jsfiddler等在线编辑器，可以方便预览。
+
+&nbsp;
+<h1>小试身手</h1>
+<a class="jsbin-embed" href="https://jsbin.com/baxacev/1/embed?js,output">JS Bin on jsbin.com</a><script src="https://static.jsbin.com/js/embed.min.js?4.0.2"></script>
 <h1>参考：</h1>
 <ul>
  	<li>https://github.com/d3/d3/wiki/Tutorials</li>

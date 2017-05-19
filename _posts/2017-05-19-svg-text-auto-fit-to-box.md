@@ -23,9 +23,7 @@ published: true
 
 经过一番搜索，最后总结出了相对可能靠谱的两个方案：
 <h1>SVG text方案</h1>
-SVG 是很强大的方案，一些炫酷的视觉交互效果都可以用SVG来实现，这里主要用到了svg viewBox这个属性，借助它，可以实现对SVG的内容在保持其内部元素坐标系统不变的前提下进行缩放。
-
-有关viewBox的了解可以看这篇文章：<a href="http://www.zhangxinxu.com/wordpress/2014/08/svg-viewport-viewbox-preserveaspectratio/">理解SVG viewBox</a>。
+SVG 是很强大的方案，一些炫酷的视觉交互效果都可以用SVG来实现.
 
 但是遗憾的是SVG对文字处理的支持不是很好，比如不支持wrap什么的，同时这种效果也是无法直接实现的，还是需要借助JS。（用foreignObject也不行，无论是CSS还是SVG，目前都无沅直接控制文字占用尺寸）
 

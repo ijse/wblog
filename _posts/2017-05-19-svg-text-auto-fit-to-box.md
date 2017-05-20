@@ -9,8 +9,10 @@ permalink: >
   https://ijser.cn/svg-text-auto-fit-to-box/
 published: true
 ---
-在一些需求场景中，给定一个固定尺寸的容器，里面文字尺寸随内容的长短自动调整尺寸，如下效果：
+在一些需求场景中，给定一个固定尺寸的容器，里面文字尺寸随内容的长短自动调整尺寸，以最大化显示，如下效果：
 <p id="pDWHWzf"><img class="alignnone size-full wp-image-221 " src="https://ijser.cn/wp-content/uploads/2017/05/img_591eb340c4cdc.png" alt="" /></p>
+<!--more-->
+
 如果容器尺寸及内容都是不确定的动态值，CSS3 并没有直接可以实现的属性，所以估计需要借助JS，一般思路是：
 <ol>
  	<li>JS获取容器尺寸</li>

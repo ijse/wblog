@@ -26,6 +26,8 @@ published: true
 5. 对工作结果负责，不推卸责任
 6. 积极为公司和团队提出有建设性意见，勇于指出不足，推动改进
 
+<!--more-->
+
 ### 工作能力
 
 1. 执行能力：主要指完成任务并交付结果的能力，包含六个要素：[PCRDFI](https://tigerbrokers.quip.com/05OjA5LRRau2#TCWACAPcrnW)

@@ -5,7 +5,8 @@ author: ijse
 post_date: 2017-06-25 17:53:07
 post_excerpt: ""
 layout: post
-permalink: 'https://ijser.cn/%e5%89%8d%e7%ab%af%e7%bb%84%e4%bb%b6%e5%8c%96%e8%ae%be%e8%ae%a1%e6%80%9d%e8%b7%af/'
+permalink: >
+  https://ijser.cn/web-component-design-in-front-end/
 published: true
 ---
 目前前端三大框架（Vue.js, Angular.js, React.js）都在引领着前端的组件化开发方向，组件化的前端开发方式的确为业务实现带来了前所未有的方便，其实组件化开发早已经具有（YUI），但如何封装一个优秀的组件，可能并不是每位前端开发者都能够做好的。

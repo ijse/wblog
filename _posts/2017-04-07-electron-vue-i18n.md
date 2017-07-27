@@ -2,11 +2,11 @@
 ID: 160
 post_title: Electron vue i18n 实现多语言程序
 author: ijse
-post_date: 2017-04-07 17:37:25
 post_excerpt: ""
 layout: post
-permalink: 'https://ijser.cn/electron-vue-i18n-%e5%ae%9e%e7%8e%b0%e5%a4%9a%e8%af%ad%e8%a8%80%e7%a8%8b%e5%ba%8f/'
+permalink: https://ijser.cn/electron-vue-i18n/
 published: true
+post_date: 2017-04-07 17:37:25
 ---
 <h3>目标</h3>
 <ul>

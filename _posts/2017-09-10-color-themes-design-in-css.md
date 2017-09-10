@@ -72,12 +72,14 @@ post_date: 2017-09-10 17:43:44
   --color-info: #218df2;
 
   /* neutrals */
-  --color-white: #dddddd;
-  --color-black: #232c37;
+  --color-light: #dddddd;
+  --color-dark: #232c37;
 }
 :root .theme-night { ... }
 :root .theme-day { ... }</pre>
 定义出不同颜色主题元颜色后，便可以给 &lt;html&gt; 标签添加不同的class来改变页面主题。
+
+注意：变量名称尽量不要用颜色名称，而是要用其代表的实际意义，抽象出其在样式主题中的意义。
 <h1>进一步阅读</h1>
 <ul>
  	<li>https://medium.com/@erikdkennedy/color-in-ui-design-a-practical-framework-e18cacd97f9e</li>
